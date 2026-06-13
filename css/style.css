@@ -160,4 +160,48 @@ section {
     line-height: 1.8;
 }
 
+/* Nosso Menu */
 
+.menu .cards_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.menu .cards_container .card {
+    text-align: center;
+    border: var(--border);
+    padding: 5rem;
+    cursor: pointer;
+}
+
+.menu .cards_container .card img {
+    height: 10rem;
+}
+
+.menu .cards_container .card h3 {
+    color: #FFFFFF;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.menu .cards_container .card .price {
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+}
+
+.menu .cards_container .card .price span {
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+.menu .cards_container .card:hover {
+    background-color: #FFFFFF;
+
+}
+
+.menu .cards_container .card:hover>* {
+    color: var(--black);
+}
